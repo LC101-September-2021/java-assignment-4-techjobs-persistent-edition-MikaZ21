@@ -1,6 +1,7 @@
 -- Part 1: Test it with SQL
-SELECT *
-FROM job;
+SELECT DATA_TYPE,COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'job' AND TABLE_SCHEMA = 'techjobs' ;
+
 -- Part 2: Test it with SQL
 SELECT name
 FROM employer
